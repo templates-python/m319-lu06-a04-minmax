@@ -1,13 +1,23 @@
 {
   "tests": [
     {
-      "name": "Autograding",
-      "setup": "",
-      "run": "python3 main.py",
+      "name": "impossible",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -k \"test_random\"",
       "input": "",
-      "output": "Total: 78.75\n",
+      "output": "",
       "comparison": "included",
-      "timeout": 1,
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "impossible",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -k \"test_extended\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
       "points": 1
     }
   ]

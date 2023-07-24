@@ -1,6 +1,7 @@
-import main
+from minmax import main
+
 
 def test(capsys):
-    main.calculate()
+    main()
     captured = capsys.readouterr()
     assert captured.out == "Total: 78.75\n"
